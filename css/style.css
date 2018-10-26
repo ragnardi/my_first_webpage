@@ -1,0 +1,269 @@
+body {
+	margin: 0;
+}
+.wrapper {
+	width: 80%;
+	max-width: 1280px;
+	margin: 0 auto;
+	font-family: Arial, sans-serif;
+}
+
+/*================HEADER================*/
+header img[src="img/logo.png"] {
+	display: block;
+	width: 21.72%;
+	min-width: 150px;
+	margin: auto;
+}
+header h1 {
+	text-transform: uppercase;
+	text-align: center;
+	line-height: 1.5em;
+	font-weight: normal;
+	color: #fff;
+	margin-top: 5%;
+}
+.h1_bold {
+	font-weight: bold;
+}
+/*----------ZIP_FORM----------*/
+.zip_form {
+	width: 26%;
+	padding: 1em 0;
+	text-align: center;
+	color: #938e8e;
+	background: #fff;
+	border-radius: 2px;
+	border: 1px solid #c4c4c4;
+	position: absolute;
+	left: 37%;
+	bottom: -15%;
+}
+.zip {
+	margin-top: 0;
+}
+.zip input {
+	width: 75%;
+	padding: 0.5em;
+	border-radius: 2px;
+	border: 1px solid #e5e5e5;
+}
+.zip_form button {
+	background: #227dd3;
+	border: none;
+	border-radius: 1px;
+	text-transform: uppercase;
+	color: #fff;
+	font-size: 1.2em;
+	padding: 0.3em 1.5em;
+}
+.zip_form button:hover {
+	background: #e25842;
+	cursor: pointer;
+}
+.zip_form button:active {
+	background: #e25842;
+	cursor: pointer;
+	box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.8);
+}
+.town_collage img {
+	width: 100%;
+}
+/*-------------------------*/
+
+header {
+	margin: 0;
+	padding-top: 6%;
+	padding-bottom: 20%;
+	background: url(../img/header_background.jpg) top center no-repeat;
+	position: relative;
+}
+/*====================================*/
+
+
+/*==============FILES_WORKSPACE===========*/
+.files {
+	margin: 0 auto;
+	text-align: center;
+	padding-top: 13%;
+	padding-bottom: 10%;
+}
+.files_link {
+	width: 40%;
+	display: inline-block;
+	text-align: left;
+
+}
+.files_link p {
+	margin-bottom: 0;
+	color: #8b8a8a;
+	font-size: 1em;
+	padding-right: 10%;
+}
+.decoration {
+	width: 20%;
+}
+.decoration img {
+	width: 100%;
+}
+.descriptions {
+	width: 75%;
+}
+.decoration, .descriptions {
+	display: inline-block;
+}
+
+/*========================================*/
+
+
+/*==============TEXT_CONTENT===============*/
+.text_content {
+	background: url(../img/mid_bg.jpg) 50% 0% no-repeat;
+	height: 1400px;
+	color: #fff;
+	position: relative;
+}
+.top_section {
+	width: 52%;
+	position: absolute;
+	top: 280px;
+	left: 24%;
+}
+.top_section h2 {
+	text-align: center;
+}
+.mid_section {
+	width: 39%;
+	position: absolute;
+	top: 900px;
+	left: 45%;
+}
+.mid_section button {
+	font-size: 1.3em;
+	padding: 0.3em 1.2em;
+	background: transparent;
+	color: #fff;
+	border: 3px solid #fff;
+	border-radius: 8px;
+}
+.mid_section button:hover {
+	cursor: pointer;
+}
+/*========================================*/
+
+
+/*================FORM_FIELD==============*/
+.form_field {
+	padding-top: 10%;
+	padding-bottom: 5%;
+	background: url(../img/map_bg.jpg) 50% 0% no-repeat;
+	text-align: center;
+}
+.round_container {
+	width: 300px;
+	height: 300px;
+	display: inline-block;
+	margin: 0;
+	background: rgba(253, 253, 253, 0.8);
+	border-radius: 50%;
+	box-shadow: 0 0 2px rgba(0, 0, 0, 0.6);
+	
+}
+.flex_container {
+	margin-top: 20%;
+}
+.flex_container p {
+	width: 50%;
+	margin: 5% auto;
+}
+.flex_container p * {
+	width: 100%;
+}
+.flex_container textarea {
+	resize: none;
+}
+.flex_container button {
+	width: 40px;
+	height: 40px;
+	background: url(../img/ok_button.png) center no-repeat;
+	background-size: 40px 40px;
+	border: none;
+	border-radius: 50%;
+}
+.submit_button_form:hover {
+	cursor: pointer;
+}
+/*========================================*/
+
+
+/*=================FOOTER=================*/
+footer {
+	text-align: center;
+	color: #fff;
+	background: #43a06d;
+}
+footer p {
+	margin: 0;
+	padding: 1em;
+	font-size: smaller;
+}
+/*========================================*/
+
+
+@media screen and (max-width: 1100px) {
+	.files_link {
+		width: 80%;
+		display: block;
+		margin: auto;
+	}
+	.decoration {
+		width: 10%;
+	}
+	.descriptions {
+		width: 75%;
+	}
+	.files_link:first-child {
+		margin-bottom: 10%;
+	}
+}
+
+@media screen and (max-width: 1000px) {
+	.text_content {
+		background: #5fc18b;
+		height: auto;
+		padding-top: 10%;
+		padding-bottom: 10%;
+	}
+	.top_section, .mid_section {
+		position: static;
+		width: 80%;
+		margin: 0 auto;
+	}
+	.mid_section h2, .mid_section p:last-child {
+		text-align: center;
+	}
+}
+
+@media screen and (max-width: 950px) {
+	.zip_form {
+		width: 70%;
+		left: 15%;
+	}
+	.town_collage {
+		display: none;
+	}
+}
+
+@media screen and (max-width: 600px) {
+	.files_link {
+		width: 100%;
+		display: block;
+		margin: auto;
+	}
+	.decoration {
+		width: 30%;
+	}
+	.descriptions {
+		width: 45%;
+	}
+}
